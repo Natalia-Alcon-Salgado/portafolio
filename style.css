@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /* Contenedor */
@@ -16,125 +16,251 @@
 
 /* Header */
 header {
-  background-color: #f4f4f4;
+  background: linear-gradient(135deg, #2d6a4f, #52b788); /* degradado verde */
+  color: white;
   text-align: center;
-  padding: 4rem 2rem;
+  padding: 6rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
+.foto-perfil {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover; /* mantiene proporción y recorta el exceso */
+  object-position: center; /* centra la parte importante de la foto */
+  margin-bottom: 1.5rem;
+  border: 4px solid #ff6b6b;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Header h1 y p */
 header h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin-bottom: 1rem;
 }
 
 header p {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   margin-bottom: 2rem;
+  max-width: 600px;
 }
 
+/* Botón del header */
 header .btn {
-  display: inline-block;
   padding: 0.8rem 2rem;
-  background-color: #007bff;
+  background-color: #ff6b6b; /* coral */
   color: white;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 header .btn:hover {
-  background-color: #0056b3;
+  background-color: #e05555; /* coral más oscuro */
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
-/* Secciones */
-section {
-  padding: 4rem 0;
-}
-
-section h2 {
-  text-align: center;
-  margin-bottom: 2rem;
-  font-size: 2rem;
-}
-
-/* Proyectos */
+/* Grid de proyectos */
 .proyectos-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
 }
 
+/* Tarjeta de proyecto */
 .proyecto {
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  overflow: hidden;
+  background-color: white;
+  border-radius: 12px;
+  padding: 1.5rem;
   text-align: center;
-  padding: 1rem;
-  background-color: #fff;
-  transition: transform 0.2s;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .proyecto:hover {
-  transform: translateY(-5px);
-}
-
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+} /* Imagen del proyecto */
 .proyecto img {
   max-width: 100%;
   height: auto;
+  border-radius: 8px;
   margin-bottom: 1rem;
-}
-
+} /* Título y descripción */
 .proyecto h3 {
+  color: #ff6b6b; /* coral */
   margin-bottom: 0.5rem;
 }
-
 .proyecto p {
-  margin-bottom: 0.5rem;
-}
-
-.proyecto a {
-  display: inline-block;
-  margin: 0.3rem;
-  color: #007bff;
+  color: #2d6a4f; /* verde oscuro */
+  margin-bottom: 1rem;
+} /* Botón de proyecto */
+.proyecto .btn {
+  display: inline-flex; /* Flex para alinear icono y texto */
+  align-items: center;
+  gap: 0.5rem; /* Espacio entre icono y texto */
+  padding: 0.6rem 1.5rem;
+  font-size: 0.95rem;
+  background-color: #4caf50; /* verde */
+  color: white;
   text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.proyecto .btn:hover {
+  background-color: #45a049; /* verde más oscuro */
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-.proyecto a:hover {
-  text-decoration: underline;
+.icono-github {
+  width: 20px;
+  height: 20px;
+}
+
+/* Grid de Sobre mí */
+.sobre-mi-grid {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 4rem 0;
+  flex-wrap: wrap; /* para que sea responsivo */
+}
+
+/* Foto en Sobre mí */
+.sobre-mi-foto img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #ff6b6b;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Texto */
+.sobre-mi-texto h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #2d6a4f; /* verde oscuro */
+}
+
+.sobre-mi-texto h3 {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  color: #ff6b6b; /* coral */
+}
+
+.sobre-mi-texto p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Lista de habilidades */
+.habilidades {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.habilidades li {
+  background-color: #4caf50; /* verde */
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
 }
 
 /* Contacto */
-#contacto ul {
-  list-style: none;
+#contacto {
+  background: linear-gradient(135deg, #52b788, #2d6a4f); /* degradado verde */
+  color: white;
+  padding: 4rem 2rem;
   text-align: center;
-  margin-top: 1rem;
+  border-radius: 12px;
+  margin-top: 3rem;
 }
 
-#contacto ul li {
-  display: inline-block;
-  margin: 0 1rem;
+#contacto h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
-/* Footer */
-footer {
-  background-color: #f4f4f4;
-  text-align: center;
-  padding: 1rem 0;
-  margin-top: 2rem;
+#contacto p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
 }
 
-/* Responsive */
-@media (max-width: 600px) {
-  header h1 {
-    font-size: 2rem;
-  }
-  header p {
-    font-size: 1rem;
-  }
+/* Links de contacto */
+.contacto-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
-/* Animaciones básicas */
+
+.contacto-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.8rem 1.2rem;
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.contacto-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.8rem 1.2rem;
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.contacto-item img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Hover general */
+.contacto-item:hover {
+  background-color: #ff6b6b; /* coral */
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+/* Hover del icono: pequeño zoom e iluminación */
+.contacto-item:hover img {
+  transform: scale(1.2);
+  filter: brightness(1.3);
+}
+
+
+
+/* Animación fade-in */
 .fade-in {
   opacity: 0;
-  transform: translateY(20px);
-  transition: all 0.8s ease-out;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
 .fade-in.show {
@@ -142,12 +268,102 @@ footer {
   transform: translateY(0);
 }
 
-/* Botón hover más elegante */
-header .btn {
-  transition: background-color 0.3s, transform 0.3s;
+.proyecto.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
-header .btn:hover {
-  background-color: #0056b3;
-  transform: scale(1.05);
+/* Retrasos escalonados */
+.proyecto.fade-in:nth-child(1) {
+  transition-delay: 0.1s;
+}
+.proyecto.fade-in:nth-child(2) {
+  transition-delay: 0.3s;
+}
+.proyecto.fade-in:nth-child(3) {
+  transition-delay: 0.5s;
+}
+.proyecto.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+ 
+footer {
+  background-color: #2d6a4f; /* verde oscuro */
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.footer-social {
+  margin-top: 0.8rem;
+}
+
+.footer-social a {
+  margin: 0 0.5rem;
+  display: inline-block;
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.footer-social a img {
+  width: 28px;
+  height: 28px;
+}
+
+.footer-social a:hover img {
+  transform: scale(1.2);
+  filter: brightness(1.3);
+}
+
+footer p {
+  font-size: 0.9rem;
+  margin: 0;
+  color: rgba(255,255,255,0.8);
+}
+
+/* Resumen rápido */
+/* Resumen rápido moderno */
+.resumen-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+  margin: 4rem 0;
+  text-align: center;
+}
+
+.resumen-card {
+  background-color: #f9f9f9;
+  padding: 2rem 1rem 1rem 1rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.resumen-card:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.resumen-icon {
+  font-size: 2rem;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 1rem auto;
+  background-color: #4caf50; /* verde */
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.resumen-card h4 {
+  color: #ff6b6b; /* coral */
+  margin-bottom: 0.5rem;
+}
+
+.resumen-card p {
+  color: #333;
+  font-weight: 500;
 }
