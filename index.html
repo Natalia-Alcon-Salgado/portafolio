@@ -1,74 +1,143 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Portafolio - [Tu Nombre]</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <!-- Header / Inicio -->
-  <header>
-    <div class="container">
-      <h1>Hola, soy [Tu Nombre]</h1>
-      <p>Desarrolladora Web Frontend | Apasionada por crear experiencias digitales</p>
-      <a href="#proyectos" class="btn">Ver mis proyectos</a>
-    </div>
-  </header>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio - Natalia Alcon Salgado</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="fade-in">
+      <div class="container header-content">
+        <!-- Foto de perfil -->
+        <img src="img/foto-natalia.jpg" alt="Foto de Natalia"
+          class="foto-perfil">
 
-  <!-- Proyectos -->
-  <section id="proyectos" class="fade-in">
-    <div class="container">
-      <h2>Proyectos Destacados</h2>
-      <div class="proyectos-grid">
-        <div class="proyecto">
-          <img src="img/proyecto1.png" alt="Proyecto 1">
-          <h3>Proyecto 1</h3>
-          <p>Descripción corta del proyecto.</p>
-          <p>Tecnologías: HTML, CSS, JavaScript</p>
-          <a href="#" target="_blank">Ver código</a>
-          <a href="#" target="_blank">Ver demo</a>
+        <h1>Hola, soy Natalia Alcon Salgado</h1>
+        <p>Desarrolladora Web Frontend | Apasionada por crear experiencias
+          digitales</p>
+        <a href="#proyectos" class="btn">Ver mis proyectos</a>
+      </div>
+    </header>
+    <!-- Resumen rápido -->
+    <section id="resumen" class="fade-in">
+      <div class="container resumen-cards">
+        <div class="resumen-card">
+          <div class="resumen-icon"><i class="fas fa-clock"></i></div>
+          <h4>Disponibilidad</h4>
+          <p>Inmediata</p>
         </div>
-        <div class="proyecto">
-          <img src="img/proyecto2.png" alt="Proyecto 2">
-          <h3>Proyecto 2</h3>
-          <p>Descripción corta del proyecto.</p>
-          <p>Tecnologías: HTML, CSS, JavaScript</p>
-          <a href="#" target="_blank">Ver código</a>
-          <a href="#" target="_blank">Ver demo</a>
+        <div class="resumen-card">
+          <div class="resumen-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <h4>Ubicación</h4>
+          <p>España 🇪🇸</p>
+          <p>Madrid </p>
+        </div>
+        <div class="resumen-card">
+          <div class="resumen-icon"><i class="fas fa-laptop-code"></i></div>
+          <h4>Enfoque</h4>
+          <p>Frontend Web Development</p>
+        </div>
+        <div class="resumen-card">
+          <div class="resumen-icon"><i class="fas fa-language"></i></div>
+          <h4>Idiomas</h4>
+          <p>Español & Inglés</p>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Sobre mí -->
-  <section id="sobre-mi" class="fade-in">
-    <div class="container">
-      <h2>Sobre mí</h2>
-      <p>Soy [Tu Nombre], desarrolladora web frontend con pasión por crear páginas web funcionales y bonitas. Me gusta aprender nuevas tecnologías y trabajar en proyectos que aporten valor.</p>
-      <p>Herramientas y tecnologías: HTML, CSS, JavaScript, React, GitHub.</p>
-    </div>
-  </section>
+    <!-- Proyectos -->
+    <section id="proyectos" class="fade-in">
+      <div class="proyectos-grid">
+        <div class="proyecto fade-in">
+          <h3>Proyecto recetas</h3>
+          <p>Página web de recetas</p>
+          <a href="https://github.com/Natalia-Alcon-Salgado/recetas.git"
+            target="_blank" class="btn"> Ver código</a>
+          <img src="img/github-icon.png" alt="GitHub" class="icono-github">
+        </div>
+        <div class="proyecto fade-in">
+          <h3>TFG</h3>
+          <p>Proyecto final de DAW. Página web de valoraciones de películas</p>
+          <a href="https://github.com/Natalia-Alcon-Salgado/proyectoTFG.git"
+            target="_blank" class="btn">Ver código</a>
+          <img src="img/github-icon.png" alt="GitHub" class="icono-github">
+        </div>
+      </div>
+    </section>
 
-  <!-- Contacto -->
-  <section id="contacto" class="fade-in">
-    <div class="container">
-      <h2>Contacto</h2>
-      <p>Puedes escribirme a <a href="mailto:tuemail@example.com">tuemail@example.com</a></p>
-      <p>O visitarme en:</p>
-      <ul>
-        <li><a href="https://github.com/tuusuario" target="_blank">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/tuusuario/" target="_blank">LinkedIn</a></li>
-      </ul>
-    </div>
-  </section>
+    <!-- Sobre mí -->
+    <section id="sobre-mi" class="fade-in">
+      <div class="container sobre-mi-grid">
+        <!-- Foto opcional a la izquierda -->
+        <div class="sobre-mi-foto">
+          <img src="img/foto-natalia.jpg" alt="Natalia Alcon Salgado">
+        </div>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 [Tu Nombre]. Todos los derechos reservados.</p>
-    </div>
-  </footer>
-<script src="script.js"></script>
+        <!-- Texto -->
+        <div class="sobre-mi-texto">
+          <h2>Sobre mí</h2>
+          <p>Soy desarrolladora web frontend con pasión por crear páginas web
+            funcionales y atractivas. Me encanta aprender nuevas tecnologías y
+            trabajar en proyectos
+            que aporten valor real.</p>
+
+          <h3>Habilidades y tecnologías</h3>
+          <ul class="habilidades">
+            <li>HTML5 & CSS3</li>
+            <li>JavaScript</li>
+            <li>Bootstrap</li>
+            <li>Java</li>
+            <li>Flexygo</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="fade-in">
+      <div class="container contacto-content">
+        <h2>Contacto</h2>
+        <p>¿Quieres colaborar o hablar conmigo? ¡Escríbeme!</p>
+
+        <div class="contacto-links">
+          <!-- Email -->
+          <a
+            href="mailto:nata.alsal@gmail.com?subject=Contacto desde portafolio"
+            class="contacto-item">
+            <img src="img/email-svgrepo-com.png" alt="Email">
+            <span>nata.alsal@gmail.com</span>
+          </a>
+
+          <!-- GitHub -->
+          <a href="https://github.com/tuusuario" target="_blank"
+            class="contacto-item">
+            <img src="img/github-icon.png" alt="GitHub">
+            <span>GitHub</span>
+          </a>
+
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/tuusuario/" target="_blank"
+            class="contacto-item">
+            <img src="img/LI-Logo.png" alt="LinkedIn">
+            <span>LinkedIn</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container footer-simple">
+        <p>&copy; 2025 Natalia Alcon Salgado. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+    <!-- Al final del body, antes de </body> -->
+    <script src="script.js"></script>
+  </body>
+</html>
 </body>
 
 </html>
