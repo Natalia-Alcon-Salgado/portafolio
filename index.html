@@ -20,80 +20,154 @@
       </div>
     </header>
 
-   <section id="resumen" class="fade-in">
-  <div class="container resumen-container">
+    <section id="resumen" class="fade-in">
+      <div class="container resumen-container">
 
-    <!-- COLUMNA IZQUIERDA: FOTO + PÁRRAFO -->
-    <div class="resumen-texto-foto">
-      <div class="resumen-foto">
-        <img src="img/foto-natalia.jpg" alt="Natalia Alcon Salgado">
+        <!-- COLUMNA IZQUIERDA: FOTO + PÁRRAFO -->
+        <div class="resumen-texto-foto">
+          <div class="resumen-foto">
+            <img src="img/foto-natalia.jpg" alt="Natalia Alcon Salgado">
+          </div>
+
+          <!-- BOTONES DEBAJO DE LA FOTO -->
+          <div class="botones-foto">
+            <a
+              href="mailto:nata.alsal@gmail.com?subject=Contacto desde portafolio"
+              class="btn-foto">
+              <i class="fas fa-envelope"></i> Enviar Email
+            </a>
+            <a href="docs/Curriculum Natalia.pdf" download class="btn-foto">
+              <i class="fas fa-file-download"></i> Descargar CV
+            </a>
+          </div>
+
+          <p>
+            Soy desarrolladora web frontend con disponibilidad inmediata,
+            enfocada en crear experiencias digitales atractivas y funcionales.
+          </p>
+        </div>
+
+        <!-- COLUMNA DERECHA: TARJETAS RESUMEN -->
+        <div class="resumen-cards-wrapper">
+          <div class="resumen-grid">
+            <div class="resumen-card">
+              <div class="resumen-icon"><i class="fas fa-clock"></i></div>
+              <h4>Disponibilidad</h4>
+              <p>Inmediata</p>
+            </div>
+            <div class="resumen-card">
+              <div class="resumen-icon"><i
+                  class="fas fa-map-marker-alt"></i></div>
+              <h4>Ubicación</h4>
+              <p>Madrid, España 🇪🇸</p>
+            </div>
+            <div class="resumen-card">
+              <div class="resumen-icon"><i class="fas fa-laptop-code"></i></div>
+              <h4>Enfoque</h4>
+              <p>Frontend Web Development</p>
+            </div>
+            <div class="resumen-card">
+              <div class="resumen-icon"><i class="fas fa-language"></i></div>
+              <h4>Idiomas</h4>
+              <p>Español & Inglés</p>
+            </div>
+          </div>
+        </div>
+
       </div>
-      <p>
-        Soy desarrolladora web frontend con disponibilidad inmediata,
-        enfocada en crear experiencias digitales atractivas y funcionales.
-      </p>
-    </div>
+    </section>
 
-    <!-- COLUMNA DERECHA: TARJETAS RESUMEN-->
-    <div class="resumen-cards-wrapper">
-      <div class="resumen-grid">
-        <div class="resumen-card">
-          <div class="resumen-icon"><i class="fas fa-clock"></i></div>
-          <h4>Disponibilidad</h4>
-          <p>Inmediata</p>
-        </div>
-        <div class="resumen-card">
-          <div class="resumen-icon"><i class="fas fa-map-marker-alt"></i></div>
-          <h4>Ubicación</h4>
-          <p>Madrid, España 🇪🇸</p>
-        </div>
-        <div class="resumen-card">
-          <div class="resumen-icon"><i class="fas fa-laptop-code"></i></div>
-          <h4>Enfoque</h4>
-          <p>Frontend Web Development</p>
-        </div>
-        <div class="resumen-card">
-          <div class="resumen-icon"><i class="fas fa-language"></i></div>
-          <h4>Idiomas</h4>
-          <p>Español & Inglés</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+    <!-- HABILIDADES -->
+    <!-- TECNOLOGÍAS -->
+    <section id="tecnologias" class="fade-in">
+      <div class="container">
+        <h2>Tecnologías y Herramientas</h2>
+        <p>Estas son las tecnologías que utilizo para crear experiencias web
+          increíbles:</p>
 
-<!-- HABILIDADES -->
-          <h3>Habilidades y tecnologías</h3>
-          <ul class="habilidades">
-            <li>HTML5 & CSS3</li>
-            <li>JavaScript</li>
-            <li>Bootstrap</li>
-            <li>Java</li>
-            <li>Flexygo</li>
-          </ul>
+        <div class="tecnologias-grid">
+          <div class="tech-card">
+            <i class="fab fa-html5"></i>
+            <span>HTML5</span>
+          </div>
+          <div class="tech-card">
+            <i class="fab fa-css3-alt"></i>
+            <span>CSS3</span>
+          </div>
+          <div class="tech-card">
+            <i class="fab fa-js-square"></i>
+            <span>JavaScript</span>
+          </div>
+          <div class="tech-card">
+            <i class="fab fa-php"></i>
+            <span>PHP 8</span>
+          </div>
+          <div class="tech-card">
+            <i class="fab fa-java"></i>
+            <span>Java</span>
+          </div>
+          <div class="tech-card">
+            <i class="fas fa-database"></i>
+            <span>SQL</span>
+          </div>
+          <div class="tech-card">
+            <i class="fab fa-bootstrap"></i>
+            <span>Bootstrap</span>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- PROYECTOS -->
     <section id="proyectos" class="fade-in">
-      <div class="proyectos-grid">
-        <div class="proyecto fade-in">
-          <h3>Proyecto recetas</h3>
-          <p>Página web de recetas</p>
-          <a href="https://github.com/Natalia-Alcon-Salgado/recetas.git"
-            target="_blank" class="btn"> Ver código</a>
-          <img src="img/github-icon.png" alt="GitHub" class="icono-github">
+  <div class="container">
+    <h2>Proyectos</h2>
+
+    <div class="proyectos-grid">
+      <!-- Proyecto 1 -->
+      <div class="proyecto fade-in">
+        <!-- Logo pequeño -->
+        <img src="img/recetas-logo.png" alt="Proyecto Recetas" class="proyecto-logo">
+
+        <h3>Proyecto Recetas</h3>
+        <p>Una página web interactiva de recetas para explorar y compartir tus platos favoritos.</p>
+        
+        <!-- Tecnologías -->
+        <div class="tech-tags">
+          <span>HTML5</span>
+          <span>CSS3</span>
+          <span>JavaScript</span>
+          <span>Bootstrap</span>
         </div>
-        <div class="proyecto fade-in">
-          <h3>TFG</h3>
-          <p>Proyecto final de DAW. Página web de valoraciones de películas</p>
-          <a href="https://github.com/Natalia-Alcon-Salgado/proyectoTFG.git"
-            target="_blank" class="btn">Ver código</a>
-          <img src="img/github-icon.png" alt="GitHub" class="icono-github">
-        </div>
+
+        <a href="https://github.com/Natalia-Alcon-Salgado/recetas.git"
+           target="_blank" class="btn">Ver código</a>
+        <img src="img/github-icon.png" alt="GitHub" class="icono-github">
       </div>
-    </section>
+
+      <!-- Proyecto 2 -->
+      <div class="proyecto fade-in">
+        <img src="img/tfg-logo.png" alt="TFG" class="proyecto-logo">
+
+        <h3>TFG</h3>
+        <p>Proyecto final de DAW: página web para valorar y comentar películas, con sistema de puntuaciones y filtros.</p>
+        
+        <div class="tech-tags">
+          <span>HTML5</span>
+          <span>CSS3</span>
+          <span>JavaScript</span>
+          <span>PHP</span>
+          <span>MySQL</span>
+        </div>
+
+        <a href="https://github.com/Natalia-Alcon-Salgado/proyectoTFG.git"
+           target="_blank" class="btn">Ver código</a>
+        <img src="img/github-icon.png" alt="GitHub" class="icono-github">
+      </div>
+    </div>
+  </div>
+</section>
+
 
     <!-- CONTACTO -->
     <section id="contacto" class="fade-in">
@@ -135,11 +209,6 @@
     </footer>
 
     <!--SCRIP DE JS-->
-    <script src="script.js"></script>
-  </body>
-</html>
-
-    <!-- Al final del body, antes de </body> -->
     <script src="script.js"></script>
   </body>
 </html>
