@@ -5,15 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Portafolio - Natalia Alcon Salgado</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   </head>
   <body>
     <!-- Header -->
     <header class="fade-in">
       <div class="container header-content">
-        <!-- Foto de perfil -->
-        <img src="img/foto-natalia.jpg" alt="Foto de Natalia"
-          class="foto-perfil">
 
         <h1>Hola, soy Natalia Alcon Salgado</h1>
         <p>Desarrolladora Web Frontend | Apasionada por crear experiencias
@@ -21,9 +19,25 @@
         <a href="#proyectos" class="btn">Ver mis proyectos</a>
       </div>
     </header>
-    <!-- Resumen rápido -->
-    <section id="resumen" class="fade-in">
-      <div class="container resumen-cards">
+
+   <section id="resumen" class="fade-in">
+  <div class="container resumen-container">
+
+    <!-- Columna izquierda: foto + párrafo -->
+    <div class="resumen-texto-foto">
+      <div class="resumen-foto">
+        <img src="img/foto-natalia.jpg" alt="Natalia Alcon Salgado">
+      </div>
+      <p>
+        Soy desarrolladora web frontend con disponibilidad inmediata,
+        enfocada en crear experiencias digitales atractivas y funcionales.
+        A continuación, algunos datos clave sobre mí:
+      </p>
+    </div>
+
+    <!-- Columna derecha: tarjetas dentro de un recuadro -->
+    <div class="resumen-cards-wrapper">
+      <div class="resumen-grid">
         <div class="resumen-card">
           <div class="resumen-icon"><i class="fas fa-clock"></i></div>
           <h4>Disponibilidad</h4>
@@ -32,8 +46,7 @@
         <div class="resumen-card">
           <div class="resumen-icon"><i class="fas fa-map-marker-alt"></i></div>
           <h4>Ubicación</h4>
-          <p>España 🇪🇸</p>
-          <p>Madrid </p>
+          <p>Madrid, España 🇪🇸</p>
         </div>
         <div class="resumen-card">
           <div class="resumen-icon"><i class="fas fa-laptop-code"></i></div>
@@ -44,6 +57,21 @@
           <div class="resumen-icon"><i class="fas fa-language"></i></div>
           <h4>Idiomas</h4>
           <p>Español & Inglés</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+          <h3>Habilidades y tecnologías</h3>
+          <ul class="habilidades">
+            <li>HTML5 & CSS3</li>
+            <li>JavaScript</li>
+            <li>Bootstrap</li>
+            <li>Java</li>
+            <li>Flexygo</li>
+          </ul>
         </div>
       </div>
     </section>
@@ -64,34 +92,6 @@
           <a href="https://github.com/Natalia-Alcon-Salgado/proyectoTFG.git"
             target="_blank" class="btn">Ver código</a>
           <img src="img/github-icon.png" alt="GitHub" class="icono-github">
-        </div>
-      </div>
-    </section>
-
-    <!-- Sobre mí -->
-    <section id="sobre-mi" class="fade-in">
-      <div class="container sobre-mi-grid">
-        <!-- Foto opcional a la izquierda -->
-        <div class="sobre-mi-foto">
-          <img src="img/foto-natalia.jpg" alt="Natalia Alcon Salgado">
-        </div>
-
-        <!-- Texto -->
-        <div class="sobre-mi-texto">
-          <h2>Sobre mí</h2>
-          <p>Soy desarrolladora web frontend con pasión por crear páginas web
-            funcionales y atractivas. Me encanta aprender nuevas tecnologías y
-            trabajar en proyectos
-            que aporten valor real.</p>
-
-          <h3>Habilidades y tecnologías</h3>
-          <ul class="habilidades">
-            <li>HTML5 & CSS3</li>
-            <li>JavaScript</li>
-            <li>Bootstrap</li>
-            <li>Java</li>
-            <li>Flexygo</li>
-          </ul>
         </div>
       </div>
     </section>
@@ -137,7 +137,4 @@
     <!-- Al final del body, antes de </body> -->
     <script src="script.js"></script>
   </body>
-</html>
-</body>
-
 </html>
