@@ -6,6 +6,11 @@
   font-family: "Poppins", sans-serif;
 }
 
+h2{
+ text-align: center;
+ margin-bottom: 20px;
+}
+
 /* CONTENEDOR */
 .container {
   width: 90%;
@@ -649,4 +654,13 @@ footer p {
 .resumen-card p {
   color: #333;
   font-weight: 500;
+}
+
+#powerbi .proyecto-logo {
+  width: 100%;
+  max-width: 900px; 
+  display: block;
+  margin: 0 auto 20px auto;
+  border-radius: 10px; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); 
 }
